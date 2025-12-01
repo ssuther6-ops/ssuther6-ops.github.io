@@ -10,22 +10,11 @@
 
     <!-- Your site's default stylesheet -->
     <link rel="stylesheet" href="../styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Sam Suther | ITIS 3135</h1>
-        <p>Designing with standards in mind.</p>
-
-        <!-- Navigation -->
-        <nav class="footer-nav">
-            <a href="../">Home</a> ~
-            <a href="project/">Projects</a> ~
-            <a href="website_evaluations.html">Website Evaluations</a> ~
-            <a href="https://github.com/ssuther6-ops" target="_blank">GitHub</a> ~
-            <a href="http://webpages.charlotte.edu/ssuther6/" target="_blank">UNCC Webpages</a>
-        </nav>
-    </header>
+    <div data-include="components/header.html"></div>
 
     <main>
         <h2>Website Evaluations</h2>
@@ -79,18 +68,7 @@
         </section>
     </main>
 
-    <footer>
-        <nav class="footer-nav">
-            <a href="../">Home</a> ~
-            <a href="website_evaluations.html">Website Evaluations</a> ~
-            <a href="https://github.com/ssuther6-ops" target="_blank">GitHub</a> ~
-            <a href="http://webpages.charlotte.edu/ssuther6/" target="_blank">UNCC Webpages</a>
-        </nav>
-
-        <p>
-            <a href="https://validator.w3.org/nu/?doc=https://ssuther6-ops.github.io/itis3135/website_evaluations.html" target="_blank">HTML Validation</a> |
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://ssuther6-ops.github.io/itis3135/styles/default.css" target="_blank">CSS Validation</a>
-        </p>
-    </footer>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
