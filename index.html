@@ -2,111 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Sam Suther | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sam Suther | ITIS 3135 Course Index</title>
 
-    <!-- Google Fonts: two fonts (headings vs body) -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
-    <style>
-        :root{
-            --bg:#f4f7fb;
-            --text:#1f2937;
-            --accent:#0066cc;
-            --muted:#54606a;
-        }
-
-        body{
-            font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-            background: var(--bg);
-            color: var(--text);
-            margin: 0 auto;
-            max-width: 900px;
-            width: 90%;
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
-
-        header h1{
-            font-family: 'Merriweather', serif;
-            font-size: 2.25rem;
-            margin: 0 0 0.5rem 0;
-            color: var(--accent);
-        }
-
-        main h2{
-            font-family: 'Merriweather', serif;
-            font-size: 1.5rem;
-            margin-top: 0.75rem;
-            color: #0b2545;
-        }
-
-        p { color: var(--muted); margin-bottom: 0.9rem; }
-
-        footer{
-            border-top: 1px solid #e1e6ea;
-            margin-top: 2rem;
-            padding-top: 0.75rem;
-            font-size: 0.95rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        nav.footer-nav{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem 1rem;
-            align-items: center;
-            font-weight: 600;
-        }
-
-        nav.footer-nav a{
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        .validators{
-            font-size: 0.85rem;
-            color: var(--muted);
-        }
-
-        @media (min-width:700px){
-            footer{ flex-direction: row; justify-content: space-between; align-items: center; }
-        }
-    </style>
+    <!-- Shared site stylesheet (lives one level up in /styles) -->
+    <link rel="stylesheet" href="../styles/default.css">
 </head>
+
 <body>
     <header>
-        <h1>Sam Suther</h1>
-        <!-- optional short tagline here -->
+        <h1>Sam Suther | ITIS 3135</h1>
+        <p>Course projects and activities for ITIS 3135.</p>
+
+        <nav class="footer-nav">
+            <a href="../">Home</a> ~
+            <a href="website_evaluations.html">Website Evaluations</a> ~
+            <a href="https://github.com/ssuther6-ops" target="_blank">GitHub</a> ~
+            <a href="http://webpages.charlotte.edu/ssuther6/" target="_blank">UNCC Webpages</a>
+        </nav>
     </header>
 
     <main>
-        <h2>Home</h2>
-        <p>I'm Sam Suther and this is the root of my website. This page serves as my personal landing page and gateway to my coursework and professional profiles.</p>
-        <p>I work with web technologies and keep project repositories on GitHub. Use the links in the footer to navigate to my ITIS3135 folder, GitHub, LinkedIn, and school pages.</p>
+        <h2>ITIS 3135 Course Homepage</h2>
+        <p>
+            This page serves as the index for my ITIS 3135 coursework. From here you can
+            navigate to major assignments and activities completed during the semester.
+        </p>
+
+        <section>
+            <h3>Key Pages</h3>
+            <ul>
+                <li><a href="website_evaluations.html">Website Evaluations (CRAP principles activity)</a></li>
+                <!-- Add more assignment links here later if you want -->
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <nav class="footer-nav" aria-label="site links">
-    <a href="itis3135/">ITIS3135</a> ~
-    <a href="https://ssuther6-ops.github.io/itis3135/stuff/My%20BAD%20WebPage%20&%20LOL!.html">Crappy Webpage</a> ~
-    <a href="https://github.com/ssuther6-ops" target="_blank" rel="noopener">GitHub.com</a> ~
-    <a href="http://webpages.charlotte.edu/ssuther6/" target="_blank" rel="noopener">CLT Web</a> ~
-    <a href="https://ssuther6.github.io/" target="_blank" rel="noopener">GitHub.io</a> ~
-    <a href="https://www.linkedin.com/in/sam-suther-0a3704267/" target="_blank" rel="noopener">LinkedIn</a>
-</nav>
+        <nav class="footer-nav">
+            <a href="../">Home</a> ~
+            <a href="website_evaluations.html">Website Evaluations</a> ~
+            <a href="https://github.com/ssuther6-ops" target="_blank">GitHub</a> ~
+            <a href="http://webpages.charlotte.edu/ssuther6/" target="_blank">UNCC Webpages</a>
+        </nav>
 
-
-        <div class="validators">
-            <!-- Add your Accumulus validator snippet here (provided by course). -->
-            <!-- Example placeholders for validators: -->
-            <a href="https://validator.w3.org/nu/?doc=REPLACE_WITH_YOUR_PAGE_URL" target="_blank" rel="noopener">HTML Validator</a> |
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=REPLACE_WITH_YOUR_PAGE_URL" target="_blank" rel="noopener">CSS Validator</a>
-        </div>
+        <p>
+            <a href="https://validator.w3.org/nu/?doc=https://ssuther6-ops.github.io/itis3135/index.html" target="_blank">HTML Validation</a> |
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://ssuther6-ops.github.io/styles/default.css" target="_blank">CSS Validation</a>
+        </p>
     </footer>
-
-    <!-- Do not embed custom scripts here per assignment; place scripts in a scripts/ folder if needed -->
 </body>
 </html>
